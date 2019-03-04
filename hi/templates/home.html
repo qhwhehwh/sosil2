@@ -1,0 +1,6 @@
+<h1>리눅스활용실습</h1>
+
+{% for file1 in files.all %}
+<h1>{{file1.title}}</h1>
+<a id="id_uploaded_file" href="{{ file1.file.url }}" download>{{ file1.file.name }}</a>
+{% endfor %}
